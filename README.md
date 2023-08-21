@@ -14,6 +14,15 @@ This project will help farmers understand the temperature and humidity of their 
 <h1>Computer setup</h1>
 I used Thonny ide and micropython to develop and upload the code onto the raspberry pi pico w<br>
 ![Screenshot 2023-08-21 at 21 59 10](https://github.com/Kevinayad/GreenHouseTempMonitor/assets/49120270/e55065d2-f2d3-407e-af29-54da6efa1064)
+I simply connect the raspberry pi to my computer then save the main.py file that includes the code into the raspberry pi then flash it and run it.
+
+<h1>electronics connection</h1>
+The electronics are connected using a breadboard and then communicating with the dht11 sensor through pin 16 of the pico w, in addition connecting the DHT11 to ground and 3.3 v power through a resistor from the pico w.
+the following picture shows how they are connected in reality.
+![tempImagemoc76F](https://github.com/Kevinayad/GreenHouseTempMonitor/assets/49120270/2be5088a-348a-4997-b5be-83666ec3caa1)
+
+<h1></h1>
+
 
 
 
