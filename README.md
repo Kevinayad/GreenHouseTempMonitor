@@ -24,8 +24,27 @@ the following picture shows how they are connected in reality.
 <h1>Platform</h1>
 I chose to use a local web server over widi since it allows me to connect quickly to the device using the built in wifi on pico w by using my home network by just using an ip address in the browser on any device, plus for the future it is scalable by just having a vpn of that network on lets say a phone so we can connect remotly to the device over the internet with no need to update the code.
 
-<h1>the code<\h1>
+<h1>the code</h1>
 the code can be found on this link https://github.com/Kevinayad/GreenHouseTempMonitor/blob/main/main.py
+
+<h1>data connectivty and transmission</h1>¨
+the data is transmitted over wifi conncetion using web sockets and HTTP on the pico w, it will then be located at a link that is hosted locally, so any device connceted to the same wifi connection shall be able to connect to it.<br>
+NOTE: when running the code change lines 10 and 11 with your SSID and wifi password in order to work on you local network.<br>
+afterwards you shall be able to flash it on your device using Thonny ide.<br>
+http and wifi allow me to connect to the device with any other device over the network by just a web browser, the nice part about this design is a simple vpn can be used to connect even when not physically on the same network, with no need to modify the code, this also increases security by adding an extra layer before connecting to the device outside its own wifi range.
+<h1>presenting the data/finalize design</h1>
+the data is just presented as a text output on the web server, after connecting you can read the temprature on screen. you get more data on the ide, a possible improvment would be to make the web server real time and to include also humidty data.<br> 
+with the current design no data is stored on a database, but that is a feature that can be included with for example using sqlite or mongodb to save the output in realtime to the database.
+<br>
+right now everytime the user refreshes the page they get the latest temprature reading.
+![Screenshot 2023-08-21 at 22 26 36](https://github.com/Kevinayad/GreenHouseTempMonitor/assets/49120270/173c8344-c1c3-41db-89a6-8aa6220b0a9b)
+![Screenshot 2023-08-21 at 21 51 13](https://github.com/Kevinayad/GreenHouseTempMonitor/assets/49120270/b67dfea3-b25d-424f-90a6-bff9fb0905aa)
+![tempImaged8STDh](https://github.com/Kevinayad/GreenHouseTempMonitor/assets/49120270/b0e576f6-3892-4b13-8b81-d3a18a6b83b3)
+
+
+
+
+
 
 
 
