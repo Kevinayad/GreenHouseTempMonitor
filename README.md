@@ -21,7 +21,10 @@ The electronics are connected using a breadboard and then communicating with the
 the following picture shows how they are connected in reality.
 ![tempImagemoc76F](https://github.com/Kevinayad/GreenHouseTempMonitor/assets/49120270/2be5088a-348a-4997-b5be-83666ec3caa1)
 
-<h1></h1>
+<h1>Platform</h1>
+I chose to use a local web server over widi since it allows me to connect quickly to the device using the built in wifi on pico w by using my home network by just using an ip address in the browser on any device, plus for the future it is scalable by just having a vpn of that network on lets say a phone so we can connect remotly to the device over the internet with no need to update the code.
+
+<h1><\h1>
 
 
 
